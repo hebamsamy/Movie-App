@@ -21,8 +21,8 @@ class _LoadingPageState extends State<LoadingPage> {
     if (res.statusCode == 200) {
       var obj = jsonDecode(res.body);
       print(obj['title']);
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => ListScreen(movie:obj)));
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => ListScreen(movie: obj)));
     } else {
       print("Something wrong HAppanede");
     }
